@@ -8,11 +8,10 @@
  */
 int_strlen(char *s)
 {
-	char*s;
 	int len;
 
-	*s = 'Alx Programming';
+	*s = 'Programming';
 	len = _strlen(*s);
-	prinf("%d\n", len);
+	printf("%d\n", len);
 	return(0);
 }
