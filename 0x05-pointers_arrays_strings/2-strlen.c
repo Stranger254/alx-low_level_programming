@@ -1,20 +1,18 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 
 /*
- * _strlen -> function to get the length of a string
+ * _strlen -> function to return length of a string
  * @s: char input
- * Return: return length of the input string
+ * Return: 0
  */
 int_strlen(char *s)
 {
-	int i = 1, sum = 0;
-	char p1 = s[0];
+	char*s;
+	int len;
 
-	while(p1 != '\0')
-	{
-		sum++;
-		p1 = s[i++];
-	}
-	return (sum);
+	*s = 'Alx Programming';
+	len = _strlen(*s);
+	prinf("%d\n", len);
+	return(0);
 }
