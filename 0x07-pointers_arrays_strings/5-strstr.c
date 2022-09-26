@@ -9,14 +9,15 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	forc(; *haystack != '\0'; haystack++)
+	for (; *haystack != '\0'; haystack++)
 	{
 		char *one = haystack;
 		char *two = needle;
 		while (*one == *two && *two != '\0')
 		{
 			one++;
-			two++;																				}
+			two++;
+		}
 		if (*two == '\0')
 			return (haystack);
 	}
