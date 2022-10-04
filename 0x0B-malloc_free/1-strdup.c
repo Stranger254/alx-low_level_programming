@@ -6,7 +6,7 @@
  * @str: String to be copied
  * Return: NULL in case of error, pointer to allocated space
  */
-cahr *_strdup(char *str)
+char *_strdup(char *str)
 {
 	char *cpy;
 	int index, len;
