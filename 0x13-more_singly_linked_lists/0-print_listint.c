@@ -8,14 +8,13 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *cursor = h;
-	size_t count = 0;
+	size_t nnodes = 0;
 
-	while (cursor != NULL)
+	while (h != NULL)
 	{
-		pritnf("%d\n", cursor->n);
-		count += 1;
-		cursor = cursor->next;
+		pritnf("%d\n", h->n);
+		h = h->next;
+		nnodes++;
 	}
-	return (count);
+	return (nnodes);
 }
